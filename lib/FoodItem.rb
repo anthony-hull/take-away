@@ -1,3 +1,3 @@
 class FoodItem
-  attr_accessor :name
+  attr_accessor :name, :price
 end
