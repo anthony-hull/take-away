@@ -1,7 +1,8 @@
 require 'Basket'
 describe Basket do
   let(:printer_spy) { spy('printer') }
-  subject { Basket.new(printer_spy) }
+  let(:calculator_spy) { spy('calculator') }
+  subject { Basket.new(printer_spy,calculator_spy) }
 
   describe 'Adding Items' do
 
@@ -28,6 +29,12 @@ describe Basket do
     it 'can call print class to print basket' do
       subject.print_menu
       expect(printer_spy).to have_received(:print).with(subject.food_items)
+    end
+    describe '::calculate' do
+      it 'can call calculator for the price total of the basket' do
+        subject.total_cost
+        expect(calculator_spy).to have_received(:calculate).with(subject.food_items)
+      end
     end
   end
 end
