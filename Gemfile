@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rspec', :group => :test
-gem 'pry-byebug', :group => [:development, :test]
+
+group :test, :development do
+  'pry-byebug'
+  'solargraph'
+end
