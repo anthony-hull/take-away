@@ -4,7 +4,7 @@ describe FoodMenu do
   let(:printer_spy) { spy('printer') }
   subject { FoodMenu.new(printer_spy) }
 
-  describe 'internal methods' do
+  describe 'Adding Items' do
 
     let(:pizza) { double("FoodItem") }
 
@@ -30,6 +30,5 @@ describe FoodMenu do
       subject.print_menu
       expect(printer_spy).to have_received(:print).with(subject.food_items)
     end
-
   end
 end
