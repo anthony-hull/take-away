@@ -10,5 +10,8 @@ describe FoodMenu do
     subject.add_menu_item(pizza)
     expect(subject.food_items).to include(pizza)
   end
-
+  it 'has 5 menu items after adding 5 items' do
+    5.times{ subject.add_menu_item(pizza) }
+    expect(subject.food_items.count).to eq(5)
+  end
 end
