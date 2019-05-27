@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'FoodItem'
 describe FoodItem do
   subject { FoodItem.new }

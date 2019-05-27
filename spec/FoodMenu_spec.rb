@@ -1,12 +1,12 @@
+# frozen_string_literal: true
+
 require 'FoodMenu'
 describe FoodMenu do
-
   let(:printer_spy) { spy('printer') }
   subject { FoodMenu.new(printer_spy) }
 
   describe 'Adding Items' do
-
-    let(:pizza) { double("FoodItem") }
+    let(:pizza) { double('FoodItem') }
 
     it 'can add a FoodItem dbl to the menu' do
       expect(subject).to receive(:add_menu_item).with(pizza)
@@ -19,10 +19,9 @@ describe FoodMenu do
     end
 
     it 'has 5 menu items after adding 5 items' do
-      5.times{ subject.add_menu_item(pizza) }
+      5.times { subject.add_menu_item(pizza) }
       expect(subject.food_items.count).to eq(5)
     end
-
   end
 
   describe 'printing' do
