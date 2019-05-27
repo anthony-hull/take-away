@@ -2,7 +2,6 @@
 
 require 'printer'
 describe Printer do
-  it 'prints out order header' do
-    expect(subject).to eq(value)
+  pending 'prints out order header' do
   end
 end
