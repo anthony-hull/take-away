@@ -1,4 +1,5 @@
 class Calculator
-  def calculate(food_items)
+  def calculate_sum(food_items)
+    food_items.reduce(0) { |sum, n| sum + n.price }
   end
 end
