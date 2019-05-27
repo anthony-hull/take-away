@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'Basket'
+require 'basket'
 describe Basket do
   let(:printer_spy) { spy('printer') }
   let(:calculator_spy) { spy('calculator') }

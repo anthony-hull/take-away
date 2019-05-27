@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'Food_item'
+require 'food_item'
 describe FoodItem do
   subject { FoodItem.new }
   it 'has name set to Pizza' do

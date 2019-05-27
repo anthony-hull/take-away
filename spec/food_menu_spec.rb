@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'FoodMenu'
+require 'food_menu'
 describe FoodMenu do
   let(:printer_spy) { spy('printer') }
   subject { FoodMenu.new(printer_spy) }
