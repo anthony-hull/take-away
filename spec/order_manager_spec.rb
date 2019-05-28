@@ -13,9 +13,9 @@ describe OrderManager do
     subject.parse_order(order_str)
     expect(subject.expected_price).to eq(2400)
   end
-  pending 'sends order to OrderManager' do
+  it 'sends order to OrderManager' do
+    allow(basket_spy).to receive(:add_options)
     subject.parse_order(order_str)
-    allow(basket_spy).to recieve(:add_options)
     expect(basket_spy).to have_received(:add_options).with(%w[pizza pizza dog])
   end
 end

@@ -20,7 +20,7 @@ class Basket
     @calculator.calculate(@food_items)
   end
 
-  def add_options
+  def add_options(order)
     
   end
 end
