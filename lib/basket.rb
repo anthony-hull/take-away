@@ -19,4 +19,8 @@ class Basket
   def total_cost
     @calculator.calculate(@food_items)
   end
+
+  def add_options
+    
+  end
 end
