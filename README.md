@@ -15,6 +15,8 @@ To check basket total against user input at order confirmation stage
 To call Twilio to send message
 Tell basket to add parsed order items to the basket.
 
+Change some Vacuous tests to be useful or delete.
+
 
 
 Update Twilio tests to not be useless.
